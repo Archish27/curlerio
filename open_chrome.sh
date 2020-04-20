@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if $1; then
-  URL=http://archishthakkar2:698xhfyLX7zieapewH4f@hub-cloud.browserstack.com/wd/hub
+  URL=http://BROWSERSTACK_USERNAME:BROWSERSTACK_ACCESS_KEY@hub-cloud.browserstack.com/wd/hub
   CAP='{"desiredCapabilities":{"browserName":"Chrome","os_version":"High Sierra","browser_version":"65.0","os":"OS X"}}'
   sessionId=$(curl -X POST "${URL}/session" -d "${CAP}" | tee /dev/tty | jq -r '.sessionId')
 else
