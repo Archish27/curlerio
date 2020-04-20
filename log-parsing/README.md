@@ -1,9 +1,9 @@
 ## Parsing Log solution
 
-1. `awk -f parser.awk tmp_more_than_50`
+1. `awk -f parser.awk tmp_more_than_50`\
    Output : 161364
 
-2. `awk 'NF>2 && NF%2==0 && !/[?]/{print $2,$3}' tmp_more_than_50 | sort | uniq -c`
+2. `awk 'NF>2 && NF%2==0 && !/[?]/{print $2,$3}' tmp_more_than_50 | sort | uniq -c`\
    Output : 
    2 GET "/automate"
    1 GET "/automate/8c7560d37c308befea72bea54db5253b9a2fbe50/error_logs"
